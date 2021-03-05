@@ -78,9 +78,10 @@ justify-content: space-between;
 #sconto-input {
   margin-left: 20px;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 10px;
   border: transparent;
   background-color:  #ffeecc;
+  flex-grow: 2;
 }
 
 /* stile bottone calcolo prezzo */
