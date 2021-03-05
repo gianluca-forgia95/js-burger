@@ -8,3 +8,11 @@
   background-color: red;
   margin: auto;
 }
+
+
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
