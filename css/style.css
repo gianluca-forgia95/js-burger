@@ -45,6 +45,9 @@ justify-content: space-between;
   margin: 30px 0;
 }
 /* stile ingredienti */
+.ingredienti {
+  padding : 0 10px;
+}
 .ingredients-pick {
   display: flex;
   flex-direction: column;
@@ -68,25 +71,33 @@ justify-content: space-between;
 /* stile input sconto */
 .sconto {
   display: flex;
-  padding: 50px 0;
+  padding: 50px 10px;
+  justify-content: center;
+  align-items: center;
 }
 #sconto-input {
   margin-left: 20px;
   padding: 10px;
   border-radius: 4px;
-  border: 2px solid #ffa64d;
+  border: transparent;
+  background-color:  #ffeecc;
 }
+
 /* stile bottone calcolo prezzo */
 #button-calc {
   text-align: center;
 }
 .btn-bottom {
   background-color: #ffa64d;
-  border: 3px solid black;
+  border: transparent;
   padding: 10px;
   border-radius: 4px;
   font-weight: bold;
+  transition: transform 0.3s;
 
+}
+.btn-bottom:hover {
+  transform: scale(1.5);
 }
 /* stile footer */
 
@@ -94,7 +105,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 50px 70px;
-  background-color: #ff3385;
+  background-color: #ff0066;
   margin-top: 60px;
   color: #fff;
 }
