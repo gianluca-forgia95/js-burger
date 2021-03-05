@@ -2,7 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+   <!-- /Google Font -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- /CSS -->
     <title>Js Burger</title>
   </head>
   <body>
@@ -20,35 +26,34 @@
   <main>
   <!-- Nome Hamburger -->
     <div>
-      <input id="burger-name" class="name-your-burger" type="text" name="" value="" placeholder="Inserisci un nome">
+      <input id="burger-name" class="name-your-burger" type="text" name="" value="" placeholder="Name your Burger">
     </div>
   <!-- /Nome Hamburger -->
   <!-- Lista Ingredienti -->
     <div class="ingredienti">
-      <h2>Aggiungi i tuoi ingredienti</h2>
+      <h2>Ingredients</h2>
       <ul class="list-none ingredients-pick">
         <li class="box-ingrediente">
           <img src="img/cheese.svg" alt="cheese">
-
         <div class="box-input">
-          <label for="formaggio"> Cheese
-          <input id="formaggio" class="ingredients" type="checkbox" name="" value="4"> add
+          <label for="formaggio"> <span>Cheese</span>
+          <input id="formaggio" class="ingredients" type="checkbox" name="" value="4"> <span class="small">add</span>
           </label>
         </div>
         </li>
         <li class="box-ingrediente">
           <img src="img/lettuce.svg" alt="lettuce">
           <div class="box-input">
-          <label for="lattuga"> Lettuce
-          <input id="lattuga" class="ingredients" type="checkbox" name="" value="5"> add
-          </label>
+           <label for="lattuga"> Lettuce
+           <input id="lattuga" class="ingredients" type="checkbox" name="" value="5"> <span class="small">add</span>
+           </label>
           </div>
         </li>
         <li class="box-ingrediente">
          <img src="img/tomato.svg" alt="tomato">
          <div class="box-input">
           <label for="pomodoro"> Tomato
-          <input id="pomodoro" class="ingredients" type="checkbox" name="" value="2"> add
+          <input id="pomodoro" class="ingredients" type="checkbox" name="" value="2"> <span class="small">add</span>
           </label>
          </div>
         </li>
@@ -56,23 +61,23 @@
           <img src="img/mustard.svg" alt="mustard">
            <div class="box-input">
             <label for="senape"> Mustard
-            <input id="senape" class="ingredients" type="checkbox" name="" value="2"> add
+            <input id="senape" class="ingredients" type="checkbox" name="" value="2"> <span class="small">add</span>
             </label>
           </div>
         </li>
         <li class="box-ingrediente">
-          <img src="img/ketchup.svg" alt="cheese">
+          <img src="img/ketchup.svg" alt="ketchup">
           <div class="box-input">
-            <label for="ketchup"> Cheese
-            <input id="ketchup" class="ingredients" type="checkbox" name="" value="1"> add
+            <label for="ketchup"> Ketchup
+            <input id="ketchup" class="ingredients" type="checkbox" name="" value="1"> <span class="small">add</span>
             </label>
           </div>
         </li>
         <li class="box-ingrediente">
-         <img src="img/fried-egg.svg" alt="cheese">
+         <img src="img/fried-egg.svg" alt="egg">
           <div class="box-input">
           <label for="uovo"> Egg
-          <input id="uovo" class="ingredients" type="checkbox" name="" value="6"> add
+          <input id="uovo" class="ingredients" type="checkbox" name="" value="6"> <span class="small">add</span>
           </label>
           </div>
         </li>
@@ -82,20 +87,23 @@
   <!-- /Lista Ingredienti -->
   <!-- Codice Sconto -->
     <div class="sconto">
-      <input id="sconto-input" type="text" name="" value="">
+      <h3> Discount Coupon</h3>
+
+      <input id="sconto-input" type="text" name="" value="" placeholder="inserisci il codice sconto">
+
     </div>
   <!-- /Codice Sconto -->
   <!-- Bottone calcolo prezzo -->
   <div id="button-calc">
-    <button type="button" name="button">Calcola il prezzo del tuo burger</button>
+    <button class="btn-bottom" type="button" name="button">Calcola il prezzo del tuo burger</button>
   </div>
   <!-- /Bottone calcolo prezzo -->
   </main>
   <footer>
   <!-- Prezzo totale -->
-    <div class="">
+
        <h3>Your price</h3>
-     </div>
+
     <div>
       <h3 id="totale">50$</h3>
     </div>
