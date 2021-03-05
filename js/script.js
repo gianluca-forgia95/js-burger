@@ -10,6 +10,10 @@ var calc = document.getElementById('button-calc');
 var burgerName = document.getElementById('burger-name');
 //Definisco variabile per gli ingredienti del panino
 var ingredientiPanino = document.getElementsByClassName('ingredients');
+//Definisco la variabile per lo sconto
+var discountCoupon = document.getElementById('sconto-input');
+//Creo l'array con i codici sconto
+var codiciSconto = ['asroma1927', '123987', 'spotify657'];
 //Definisco variabile per il totale
 var total = document.getElementById('totale');
 //Inizializzo l'evento
@@ -24,16 +28,11 @@ function() {
       if ( ingredientiPanino[i].checked == true ) {
         somma = somma + parseInt( ingredientiPanino[i].value );
       }
-     //Definisco la variabile per lo sconto
-      var discountCoupon = document.getElementById('sconto-input');
-     //Creo l'array con i codici sconto
-     var codiciSconto = ['asroma1927', '123987', 'spotify657'];
+
      //applico lo sconto alla somma
      if ( codiciSconto.includes(discountCoupon.value) ) {
        somma -= somma / 100 * 20;
      }
-
-
 
     }
      total.innerHTML = somma + ' $';

@@ -10,47 +10,71 @@
   <div class="wrapper">
 
   <header>
-    <h1>Create your burger</h1>
+    <div class="title-hamburger">
+      <h1>Crea il tuo Hamburger</h1>
+    </div>
+    <div class="burger-logo">
+      <img src="img/burger-top.png" alt="burger">
+    </div>
   </header>
   <main>
   <!-- Nome Hamburger -->
     <div>
-      <input id="burger-name" type="text" name="" value="">
+      <input id="burger-name" class="name-your-burger" type="text" name="" value="" placeholder="Inserisci un nome">
     </div>
   <!-- /Nome Hamburger -->
   <!-- Lista Ingredienti -->
     <div class="ingredienti">
       <h2>Aggiungi i tuoi ingredienti</h2>
-      <ul>
-        <li>
+      <ul class="list-none ingredients-pick">
+        <li class="box-ingrediente">
+          <img src="img/cheese.svg" alt="cheese">
+
+        <div class="box-input">
           <label for="formaggio"> Cheese
-          <input id="formaggio" class="ingredients" type="checkbox" name="" value="4">
+          <input id="formaggio" class="ingredients" type="checkbox" name="" value="4"> add
           </label>
+        </div>
         </li>
-        <li>
+        <li class="box-ingrediente">
+          <img src="img/lettuce.svg" alt="lettuce">
+          <div class="box-input">
           <label for="lattuga"> Lettuce
-          <input id="lattuga" class="ingredients" type="checkbox" name="" value="5">
+          <input id="lattuga" class="ingredients" type="checkbox" name="" value="5"> add
           </label>
+          </div>
         </li>
-        <li>
+        <li class="box-ingrediente">
+         <img src="img/tomato.svg" alt="tomato">
+         <div class="box-input">
           <label for="pomodoro"> Tomato
-          <input id="pomodoro" class="ingredients" type="checkbox" name="" value="2">
+          <input id="pomodoro" class="ingredients" type="checkbox" name="" value="2"> add
           </label>
+         </div>
         </li>
-        <li>
-          <label for="senape"> Mustard
-          <input id="senape" class="ingredients" type="checkbox" name="" value="2">
-          </label>
+        <li class="box-ingrediente">
+          <img src="img/mustard.svg" alt="mustard">
+           <div class="box-input">
+            <label for="senape"> Mustard
+            <input id="senape" class="ingredients" type="checkbox" name="" value="2"> add
+            </label>
+          </div>
         </li>
-        <li>
-          <label for="ketchup"> Cheese
-          <input id="ketchup" class="ingredients" type="checkbox" name="" value="1">
-          </label>
+        <li class="box-ingrediente">
+          <img src="img/ketchup.svg" alt="cheese">
+          <div class="box-input">
+            <label for="ketchup"> Cheese
+            <input id="ketchup" class="ingredients" type="checkbox" name="" value="1"> add
+            </label>
+          </div>
         </li>
-        <li>
+        <li class="box-ingrediente">
+         <img src="img/fried-egg.svg" alt="cheese">
+          <div class="box-input">
           <label for="uovo"> Egg
-          <input id="uovo" class="ingredients" type="checkbox" name="" value="6">
+          <input id="uovo" class="ingredients" type="checkbox" name="" value="6"> add
           </label>
+          </div>
         </li>
 
       </ul>

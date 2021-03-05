@@ -5,14 +5,60 @@
 }
 .wrapper {
   max-width: 1000px;
-  background-color: red;
+  background-color: ;
   margin: auto;
 }
-
-
+/* Mix  */
+.list-none {
+  list-style: none;
+}
+/* Stile header */
+header {
+background-color:  #ffa64d;
+display: flex;
+justify-content: space-between;
+}
+.burger-logo {
+  border-radius: 50%;
+  height: 130px;
+}
+.burger-logo img {
+  max-height: 230px;
+}
+.title-hamburger {
+  padding: 40px 40px 30px 30px;
+}
 
 
 footer {
   display: flex;
   justify-content: space-between;
+}
+/* Stile nome hamburger input  */
+.name-your-burger {
+  padding: 10px 10px;
+  border: 2px solid #ffa64d;
+  border-radius: 4px;
+  margin: 30px 0;
+}
+/* stile ingredienti */
+.ingredients-pick {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 120px;
+  margin-top: 20px;
+}
+.box-ingrediente {
+  width: 190px;
+  height: 40px;
+  display: flex;
+  padding: 5px 0;
+}
+.box-input {
+  align-self: center;
+  margin-left: 18px;
+}
+.ingredients {
+  margin: 0 10px;
 }
