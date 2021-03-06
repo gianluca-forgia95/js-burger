@@ -34,8 +34,8 @@ function() {
        somma -= somma / 100 * 20;
      }
 
-    }
-     total.innerHTML = somma + ' $';
+   }//stampo il risultato nella pagina
+     total.innerHTML = somma.toFixed(2) + ' $';
   } else {
     alert('Inserisci il nome del panino');
   }
