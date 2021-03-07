@@ -22,9 +22,10 @@ body {
 }
 /* Stile header */
 header {
-background-color: #ffb84d;
+background-color: #fdbb40;
 display: flex;
 justify-content: space-between;
+position: relative;
 }
 .burger-logo {
   border-radius: 50%;
@@ -33,7 +34,11 @@ justify-content: space-between;
 
 .burger-logo img {
   max-height: 230px;
+  position: absolute;
+  right: -5%;
+  top: 0;
 }
+
 .title-hamburger {
   padding: 40px 40px 30px 30px;
 }
@@ -112,7 +117,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 50px 70px;
-  background-color: #ff0066;
+  background-color: #d33359;
   margin-top: 60px;
   color: #fff;
 }

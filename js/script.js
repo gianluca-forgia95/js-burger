@@ -26,7 +26,7 @@ function() {
     for (var i = 0; i < ingredientiPanino.length; i++) {
     //Stabilisco le condizioni
       if ( ingredientiPanino[i].checked == true ) {
-        somma = somma + parseInt( ingredientiPanino[i].value );
+        somma += parseInt( ingredientiPanino[i].value );
       }
 
      //applico lo sconto alla somma
